@@ -43,7 +43,7 @@ export default {
             <div class="row">
                 
                 <div class="col" v-for="(currentIcon, index) in icons">
-                    <img :src="currentIcon.image" :alt="'immagine  ' + index">
+                    <img :src="currentIcon.image" :alt="'immagine  ' + (index + 1)">
                     <div class="text">
                         {{ currentIcon.text }}
                     </div>
