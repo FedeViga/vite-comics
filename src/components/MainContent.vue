@@ -1,10 +1,16 @@
 
 <script>
+import AppIconsBar from './AppIconsBar.vue';
 
 export default {
     name: 'MainContent',
 
+    components: {
+        AppIconsBar
+    },
+
     data() {
+
         return {
         }
     }
@@ -25,6 +31,8 @@ export default {
         </div>
 
     </main>
+
+    <AppIconsBar></AppIconsBar>
 
 </template>
 

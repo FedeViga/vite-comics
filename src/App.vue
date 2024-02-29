@@ -2,14 +2,12 @@
 <script>
 import AppNav from './components/AppNav.vue';
 import MainContent from './components/MainContent.vue';
-import AppIconsBar from './components/AppIconsBar.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
   components: {
     AppNav,
     MainContent,
-    AppIconsBar,
     AppFooter
   }
 }
@@ -21,8 +19,6 @@ export default {
   <AppNav></AppNav>
 
   <MainContent></MainContent>
-
-  <AppIconsBar></AppIconsBar>
 
   <AppFooter></AppFooter>
 

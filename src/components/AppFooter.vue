@@ -139,7 +139,7 @@ footer {
 
         img {
             position: absolute;
-            right: 0px;
+            right: 10px;
             top:50%;
             transform: translateY(-50%);
         }
@@ -155,9 +155,7 @@ footer {
                     font-size: 16px;
                 }
             }
-
-            .link-list:nth-of-type(2) {
-            }
+            
 
             ul {
                 list-style-type: none;
