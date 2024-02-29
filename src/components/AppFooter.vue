@@ -132,6 +132,7 @@ footer {
         background-size: cover;
         padding: 44px 0px;
         overflow: hidden;
+        
 
         .container {
             position: relative;
@@ -146,8 +147,10 @@ footer {
 
         .links {
             display: flex;
-            align-items: flex-start;
-            gap: 30px;
+            height: 230px;
+            flex-flow: column wrap;
+            align-content: flex-start;
+            gap: 20px 30px;
 
             .link-list {
 
@@ -187,7 +190,7 @@ footer {
             align-items: center;
 
             .button {
-                padding: 16px;
+                padding: 8px 16px;
                 border: 2px solid $primary-color;
             }
 
