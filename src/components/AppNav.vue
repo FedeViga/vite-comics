@@ -37,6 +37,8 @@ export default {
 
 <style lang="scss">
 
+@use '../styles/variables' as *;
+
 nav {
 
     background-color: white;
@@ -65,7 +67,7 @@ nav {
 
 
                 &.active {
-                    color: #0282F9;
+                    color: $primary-bg-color
                 }
             
                 &.active::before {
@@ -74,7 +76,7 @@ nav {
                     bottom: calc((-120px + 18px) / 2);
                     width: 100%;
                     height: 5px;
-                    background-color: #0282F9;
+                    background-color: $primary-bg-color
                 }
             }
         }
