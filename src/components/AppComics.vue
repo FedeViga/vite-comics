@@ -109,6 +109,8 @@ export default {
                     v-for="currentComicBook in comicBooks"
                     :card-name="currentComicBook.series"
                     :card-image="currentComicBook.thumb"
+                    :card-type="currentComicBook.type"
+                    :card-price="currentComicBook.price"
                 ></ComicItem>
 
             </div>
@@ -167,6 +169,12 @@ export default {
             padding: 10px 60px;
             text-transform: uppercase;
             background-color: $primary-bg-color;
+            transition: .2s ease;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
         }
     }
 

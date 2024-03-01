@@ -10,7 +10,16 @@ export default {
 
             activeLinkIndex: 1,
         }
-    }
+
+    },
+
+    methods: {
+
+        activeLink(index) {
+            this.activeLinkIndex = index
+        }
+
+},
 }
 
 </script>
@@ -24,7 +33,11 @@ export default {
             <img src="/img/dc-logo.png" alt="logo DC">
     
             <ul>
-                <li v-for="(currentLink, index) in links" :class="activeLinkIndex == index ? 'active' : ''">
+                <li 
+                    v-for="(currentLink, index) in links" 
+                    :class="activeLinkIndex == index ? 'active' : ''"
+                    @click="activeLink(index)"
+                >
                     {{ currentLink }}
                 </li>
             </ul>
@@ -42,6 +55,10 @@ export default {
 nav {
 
     background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 
     .container {
 
@@ -64,7 +81,12 @@ nav {
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 12px;
+                transition: .2s ease;
 
+                &:hover {
+                    cursor: pointer;
+                    color: $primary-color;
+                }
 
                 &.active {
                     color: $primary-bg-color

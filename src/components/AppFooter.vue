@@ -192,6 +192,12 @@ footer {
             .button {
                 padding: 8px 16px;
                 border: 2px solid $primary-color;
+                transition: .2s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $primary-bg-color;
+                }
             }
 
             .social {
@@ -214,6 +220,15 @@ footer {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    img {
+                        transition: .2s ease;
+
+                        &:hover {
+                        cursor: pointer;
+                        filter: brightness(2);
+                        }
+                    }
                 }
             }
         }

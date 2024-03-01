@@ -78,6 +78,12 @@ export default {
             color: white;
             font-size: 12px;
             text-transform: uppercase;
+            transition: .2s ease;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
 
             img {
                 height: 55px;

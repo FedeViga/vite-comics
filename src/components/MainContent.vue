@@ -40,6 +40,7 @@ export default {
 
 main {
     color: white;
+    margin-top: 120px;
 }
 
 </style>
