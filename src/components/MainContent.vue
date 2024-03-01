@@ -2,13 +2,15 @@
 <script>
 import AppIconsBar from './AppIconsBar.vue';
 import AppJumbo from './AppJumbo.vue';
+import AppComics from './AppComics.vue';
 
 export default {
     name: 'MainContent',
 
     components: {
         AppIconsBar,
-        AppJumbo
+        AppJumbo,
+        AppComics
     },
 
     data() {
@@ -21,9 +23,12 @@ export default {
 </script>
 
 <template>
+
     <main>
         
         <AppJumbo></AppJumbo>
+
+        <AppComics></AppComics>
         
         <AppIconsBar></AppIconsBar>
 
@@ -32,5 +37,9 @@ export default {
 </template>
 
 <style lang="scss">
+
+main {
+    color: white;
+}
 
 </style>
