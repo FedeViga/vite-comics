@@ -36,7 +36,7 @@ export default {
 
 <template>
 
-    <section>
+    <section class="icon-bar">
 
         <div class="container">
     
@@ -60,7 +60,7 @@ export default {
 
 @use '../styles/variables' as *;
 
-section {
+.icon-bar {
 
     background-color: $primary-bg-color;
 
